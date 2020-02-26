@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                sh './mvnw clean install'
-                archiveArtifacts artifacts: 'dist/myapp.zip'
+                sh './mvnw clean package'
+                archiveArtifacts artifacts: 'target/springapp-0.0.1-SNAPSHOT.war'
             }
         }
     }
