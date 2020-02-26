@@ -5,6 +5,7 @@ Sample Jenkins build test.
 
 testing code commit.
 
+setup webhooks like so: http://204e7dbe.ngrok.io/github-webhook/
 https://developer.github.com/webhooks/configuring/
 
 disable csrf
@@ -23,3 +24,5 @@ install Jenkins Plugin: publish over ssh plugin
 https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-auto-scaling-group.html
 
 get pipeline plugin to support Jenkinsfile for multi-pipelines.
+
+start ngrok: C:\Dev\Jenkins\ngrok>ngrok http 8080
